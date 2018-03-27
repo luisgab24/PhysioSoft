@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66EA87F0-9E2F-42BF-A49D-060A57F8A8F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PhysioSoft.My.MyApplication</StartupObject>
+    <RootNamespace>PhysioSoft</RootNamespace>
+    <AssemblyName>PhysioSoft</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PhysioSoft.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PhysioSoft.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Printing.PrintForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.Designer.vb">
+      <DependentUpon>Agenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendar_Cita.Designer.vb">
+      <DependentUpon>Agendar_Cita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agendar_Cita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda_Dia.Designer.vb">
+      <DependentUpon>Agenda_Dia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Dia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultorioDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>consultorioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="consultorioDataSet.vb">
+      <DependentUpon>consultorioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dermatomas.Designer.vb">
+      <DependentUpon>dermatomas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dermatomas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.vb">
+      <DependentUpon>Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historia Clinica.Designer.vb">
+      <DependentUpon>Historia Clinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Historia Clinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.vb">
+      <DependentUpon>Intro.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nota_Evolucion.Designer.vb">
+      <DependentUpon>Nota_Evolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nota_Evolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paciente_Modificar.Designer.vb">
+      <DependentUpon>Paciente_Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente_Modificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paciente_Nuevo.Designer.vb">
+      <DependentUpon>Paciente_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paciente_Nuevo2.Designer.vb">
+      <DependentUpon>Paciente_Nuevo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente_Nuevo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario_Consultar.Designer.vb">
+      <DependentUpon>Usuario_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validar_Cita.Designer.vb">
+      <DependentUpon>Validar_Cita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Validar_Cita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valoraciones-Visualizar.Designer.vb">
+      <DependentUpon>Valoraciones-Visualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Valoraciones-Visualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valoraciones.Designer.vb">
+      <DependentUpon>Valoraciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Valoraciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agendar_Cita.resx">
+      <DependentUpon>Agendar_Cita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda_Dia.resx">
+      <DependentUpon>Agenda_Dia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dermatomas.resx">
+      <DependentUpon>dermatomas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historia Clinica.resx">
+      <DependentUpon>Historia Clinica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nota_Evolucion.resx">
+      <DependentUpon>Nota_Evolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paciente_Modificar.resx">
+      <DependentUpon>Paciente_Modificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paciente_Nuevo.resx">
+      <DependentUpon>Paciente_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paciente_Nuevo2.resx">
+      <DependentUpon>Paciente_Nuevo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Consultar.resx">
+      <DependentUpon>Usuario_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validar_Cita.resx">
+      <DependentUpon>Validar_Cita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valoraciones-Visualizar.resx">
+      <DependentUpon>Valoraciones-Visualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valoraciones.resx">
+      <DependentUpon>Valoraciones.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="consultorioDataSet.xsc">
+      <DependentUpon>consultorioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="consultorioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>consultorioDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="consultorioDataSet.xss">
+      <DependentUpon>consultorioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="consultorio.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logov2.png" />
+    <None Include="Resources\Consultorio.jpg" />
+    <None Include="Resources\Logo_Physio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSComDlg">
+      <Guid>{F9043C88-F6F2-101A-A3C9-08002B2F49FB}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSComDlg">
+      <Guid>{F9043C88-F6F2-101A-A3C9-08002B2F49FB}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
